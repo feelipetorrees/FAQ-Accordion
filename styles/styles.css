@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  --background_FAQ: hsl(0, 0%, 100%);
+  --color_background: hsl(275, 100%, 97%);
+  --color_minusBtn: hsl(292, 16%, 49%);
+  --color_plusBtns: hsl(292, 42%, 14%);
+}
+
+body{
+  background: url('../assets/images/background-pattern-desktop.svg') repeat-x;
+  background-color: var(--color_background);
+}
+
+main{
+  font-family: 'Work sans', sans-serif;
+}
+
+.accordion-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background_FAQ);
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  width: 500px;
+  
+  h1{
+    font-size: 3.5rem;
+  }
+  
+  .question p{
+      font-weight: 600;
+    }
+
+    .response {
+      display: none;
+      color: gray;
+      font-weight: 400;
+    }
+    .active-accordion{
+      display: flex !important;
+    }
+}
+
+.FAQ {
+  padding: .8rem; 
+}
+
+.FAQ div{
+  display: flex;
+  position: relative;
+  align-items: center;
+  
+  img{
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+  }
+
+}
+
+
+
